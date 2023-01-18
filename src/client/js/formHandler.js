@@ -13,7 +13,7 @@
 async function getSentimentAnalysis(pageURL) {
 
   /* Send a POST request to the server in order to easily send the URL. */
-  const serverResponse = await fetch('http://localhost:8081/meaningCloud', {
+  const serverResponse = await fetch('https://abner-vinaja-evaluate-articles-nlp-app.azurewebsites.net/meaningCloud', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
